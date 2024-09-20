@@ -1,0 +1,8 @@
+Input the element to be declare // Input book’s ISBN
+For element in the container:
+If element in seen: // If book is in the container
+return True // Book found
+Then add a choice to remove the book
+Else element not seen: // element is not in the set
+return False // Book is not found
+Then add a choice to add the book
