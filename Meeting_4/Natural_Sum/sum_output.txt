@@ -1,0 +1,3 @@
+Sum of Natural Numbers
+Input number: 5
+The sum of all natural numbers up to 5 is 15
