@@ -1,0 +1,7 @@
+Payslip of Employee
+Name: Joan
+Gross Salary: Rp 18000000
+Installment: Rp 400000
+Insurance: Rp 100000
+Tax: Rp 3600000
+Net Salary: Rp 13900000

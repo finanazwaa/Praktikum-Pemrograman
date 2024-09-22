@@ -1,0 +1,5 @@
+Quadratic Equations ax^2 + bx + c
+====================================
+Your quadratic equation is 3x^2 + 6x + 3
+The Discriminant: 0
+There is exactly one root: -1
