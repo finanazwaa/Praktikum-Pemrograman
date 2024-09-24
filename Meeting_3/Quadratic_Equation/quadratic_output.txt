@@ -1,5 +1,0 @@
-Quadratic Equations ax^2 + bx + c
-====================================
-Your quadratic equation is 4x^2 + 2x + 5
-The Discriminant: -76
-D < 0, so there are no real roots (the roots are complex).
