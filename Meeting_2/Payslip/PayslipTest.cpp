@@ -43,9 +43,9 @@ int main() {
     int expectedTax = 2000000;
     int expectedNet = 7700000;
 
-    bool testPassed = false;
+    bool testPassed = false;    
     if (name == expectedName) testPassed = true;
-    if (gross = expectedGross) testPassed = true;
+    if (gross == expectedGross) testPassed = true;
     if (installment == expectedInstallment) testPassed = true;
     if (insurance == expectedInsurance) testPassed = true;
     if (tax == expectedTax) testPassed = true;

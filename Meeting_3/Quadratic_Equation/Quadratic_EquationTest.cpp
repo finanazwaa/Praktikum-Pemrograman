@@ -44,6 +44,7 @@ int main ()
         cout << "D < 0, so there are no real roots (the roots are complex)." << endl;
         }
 
+    //Expected result for make test
     int expectedA = 2;
     int expectedB = -9;
     int expectedC = 1;

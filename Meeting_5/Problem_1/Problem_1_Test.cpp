@@ -5,10 +5,12 @@
 using namespace std;
 
 int main() {
-    vector<string> result; // Vector to store the result
+    cout << "FizzBuzz 1-100" << endl;
+    cout << "=================" << endl;
+    
+    vector<string> result; 
 
-    // Compute the result
-    for (int i = 0; i <= 100; ++i) {
+    for (int i = 1; i <= 100; ++i) {
         if (i % 3 == 0 && i % 5 == 0) {
             result.push_back("FizzBuzz");
         } else if (i % 3 == 0) {
@@ -20,7 +22,7 @@ int main() {
         }
     }
 
-    // Expected results for comparison
+    //Expected result for make test
     vector<string> expectedResults = {
         "1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz",
         "11", "Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz", "19", "Buzz",
@@ -34,15 +36,13 @@ int main() {
         "91", "92", "Fizz", "94", "Buzz", "Fizz", "97", "98", "Fizz", "Buzz"
     };
 
-    // Check if the results match expected values
     bool allCorrect = true;
-    for (int i = 0; i < 100; ++i) {
+    for (int i = 1; i < 100; ++i) {
         if (result[i] != expectedResults[i]) {
             allCorrect = false;
         }
     }
 
-    // Check if all results are correct
     if (allCorrect) {
         cout << "Test passed." << endl;
     } else {

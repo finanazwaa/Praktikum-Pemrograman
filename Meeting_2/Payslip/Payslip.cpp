@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
     cout<<"Payslip of Employee"<< endl;
+    cout << "=================" << endl;
     
     string name;
     cout<< "Name:";

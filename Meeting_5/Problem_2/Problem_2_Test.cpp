@@ -8,12 +8,9 @@ int main() {
 
     vector <int> vectorA;
     int counts = 5;
-    int numbers;
     
-
     cout << "How many numbers you want to input: " << counts << endl;
    
-
     cout << "Enter " << counts << " numbers: ";
     for (int i = 1; i <= 5; i++) {
       vectorA.push_back(i);
@@ -32,7 +29,6 @@ int main() {
     }
 
     cout << endl;
-
 
     vector<int> expectedReversed = {5, 4, 3, 2, 1};
 

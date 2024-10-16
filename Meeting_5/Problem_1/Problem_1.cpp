@@ -5,9 +5,11 @@
 using namespace std;
 
 int main() {
-    vector<string> result; // vector to store the result
+    cout << "FizzBuzz 1-100" << endl;
+    cout << "=================" << endl;
 
-    // Compute the result
+    vector<string> result;
+
     for (int i = 0; i <= 100; ++i) {
         if (i % 3 == 0 && i % 5 == 0) {
             result.push_back("FizzBuzz");
@@ -20,7 +22,6 @@ int main() {
         }
     }
 
-    // Print the result
     for (int i = 1; i <= 100; ++i) {
         cout << result[i] << endl;
     }
