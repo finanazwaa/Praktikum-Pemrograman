@@ -37,7 +37,7 @@ int main() {
     for (int j = 1; j < total; j++) {
         int i = j-1;
         Data temp = data[j];
-        while (i >= 0 && data[i].number > temp.number){
+        while (i >= 0 && data[i].number < temp.number){
             data[i+1] = data[i];
             i--;
         }
@@ -55,7 +55,7 @@ int main() {
         for (int j = 1; j < total; j++) {
         int i = j-1;
         Data temp = data[j];
-        while (i >= 0 && data[i].value > temp.value){
+        while (i >= 0 && data[i].value < temp.value){
             data[i+1] = data[i];
             i--;
         }

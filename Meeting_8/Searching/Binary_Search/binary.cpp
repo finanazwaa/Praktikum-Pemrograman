@@ -31,31 +31,12 @@ int main() {
     cout << endl;
     
     cout << "============================" << endl;
-    cout << "Bubble Sort Based on NISN" << endl;
+    cout << "Sorted Data: " << endl;
     cout << "============================" << endl;
     
     for (int i = 0; i < total - 1; i++) {
         for (int j = 0; j < total - 1; j++) {
-            if (data[j].number < data[j+1].number) {
-                Data temp = data[j] ;
-                data[j] = data[j+1];
-                data[j+1] = temp;
-            }
-    }
-    }
-    
-    cout << "Data After Sorting: " << endl;
-    showData(data, total);
-    cout << "\n";
-
-
-    cout << "============================" << endl;
-    cout << "Bubble Sort Based on Value" << endl;
-    cout << "============================" << endl;
-    
-    for (int i = 0; i < total - 1; i++) {
-        for (int j = 0; j < total - 1; j++) {
-            if (data[j].value < data[j+1].value) {
+            if (data[j].number > data[j+1].number) {
                 Data temp = data[j] ;
                 data[j] = data[j+1];
                 data[j+1] = temp;
@@ -67,5 +48,29 @@ int main() {
     showData(data, total);
     cout << "\n";
     
+    long long searched = 9950310962;
+    cout << "NISN Searched: " << searched << endl;
+    
+bool found = false;
+    int i = 0, j = total - 1, mid;
+    while (!found && i <= j) {
+        mid = (i + j) / 2;
+        if (data[mid].number < searched) {
+            i = mid + 1;
+        } else if (data[mid].number == searched) {
+            found = true;
+        } else {
+            j = mid - 1;
+        }
+    }
+    
+if (!found) {
+        cout << "The data is not found." << endl;
+    } 
+    
+else {
+        cout << "The data is found: " << endl;
+        cout << "Name: " << data[mid].name << "\t" << " Value: " << data[mid].value << endl;
+    }
     return 0;
 }

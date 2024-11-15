@@ -37,10 +37,9 @@ int main() {
     for (int i = 0; i < total - 1; i++) {
         int min = i;
         for (int j = i + 1; j < total; j++) {
-            if (data[j].number < data[min].number) {
+            if (data[j].number > data[min].number) {
                 min = j;
-            }
-        }
+            }}
         Data temp = data[i];
         data[i] = data[min];
         data[min] = temp;
@@ -57,10 +56,9 @@ int main() {
     for (int i = 0; i < total - 1; i++) {
         int min = i;
         for (int j = i + 1; j < total; j++) {
-            if (data[j].value < data[min].value) {
+            if (data[j].value > data[min].value) {
                 min = j;
-            }
-        }
+            }}
         Data temp = data[i];
         data[i] = data[min];
         data[min] = temp;

@@ -28,13 +28,13 @@ int main() {
 
     // Based on NISN
     Data dataTestNISN[] = {
-        {9950310962, "Ronaldo Valentino Uneputty", 80},
-        {9952382180, "Ari Lutfianto", 65},
-        {9960312699, "Handi Ramadhan", 90},
-        {9963959682, "Rio Alfandra", 55},
-        {9965653989, "Arief Budiman", 60},
-        {9970272750, "Achmad Yaumil Fadjri R", 60},
-        {9970293945, "Alivia Rahma Pramesti", 70}
+    {9970293945, "Alivia Rahma Pramesti", 70},
+    {9970272750, "Achmad Yaumil Fadjri R", 60},
+    {9965653989, "Arief Budiman", 60},
+    {9963959682, "Rio Alfandra", 55},
+    {9960312699, "Handi Ramadhan", 90},
+    {9952382180, "Ari Lutfianto", 65},
+    {9950310962, "Ronaldo Valentino Uneputty", 80}
     };
 
     cout << "Data Before Sorting: " << endl;
@@ -47,7 +47,7 @@ int main() {
 
     for (int i = 0; i < total - 1; i++) {
         for (int j = 0; j < total - 1; j++) {
-            if (data[j].number > data[j + 1].number) {
+            if (data[j].number < data[j + 1].number) {
                 Data temp = data[j];
                 data[j] = data[j + 1];
                 data[j + 1] = temp;
@@ -92,13 +92,13 @@ int main() {
     }
 
     Data dataTestValue[] = {
-        {9963959682, "Rio Alfandra", 55},
+        {9960312699, "Handi Ramadhan", 90},
+        {9950310962, "Ronaldo Valentino Uneputty", 80},
+        {9970293945, "Alivia Rahma Pramesti", 70},
+        {9952382180, "Ari Lutfianto", 65},
         {9970272750, "Achmad Yaumil Fadjri R", 60},
         {9965653989, "Arief Budiman", 60},
-        {9952382180, "Ari Lutfianto", 65},
-        {9970293945, "Alivia Rahma Pramesti", 70},
-        {9950310962, "Ronaldo Valentino Uneputty", 80},
-        {9960312699, "Handi Ramadhan", 90}
+        {9963959682, "Rio Alfandra", 55}
     };
 
     cout << "============================" << endl;
@@ -107,7 +107,7 @@ int main() {
 
     for (int i = 0; i < total - 1; i++) {
         for (int j = 0; j < total - 1; j++) {
-            if (data[j].value > data[j + 1].value) {
+            if (data[j].value < data[j + 1].value) {
                 Data temp = data[j];
                 data[j] = data[j + 1];
                 data[j + 1] = temp;
@@ -125,7 +125,7 @@ int main() {
             data[i].name != dataTestValue[i].name ||
             data[i].value != dataTestValue[i].value) {
             testPassed = false;
-            break; // Stop early if a mismatch is found
+            break; 
         }
     }
 

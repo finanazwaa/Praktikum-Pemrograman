@@ -66,9 +66,23 @@ bool found = false;
     
 if (!found) {
         cout << "The data is not found." << endl;
-    } else {
+    } 
+    
+else {
         cout << "The data is found: " << endl;
         cout << "Name: " << data[mid].name << "\t" << " Value: " << data[mid].value << endl;
     }
+
+string expectedName = "Ronaldo Valentino Uneputty";
+    int expectedValue = 80;
+    bool searchTestPassed = (data[mid].name == expectedName && data[mid].value == expectedValue);
+
+    // Output test result for binary search
+    if (searchTestPassed) {
+        cout << "Binary Search Test passed." << endl;
+    } else {
+        cout << "Binary Search Test not passed." << endl;
+    }
+
     return 0;
 }
